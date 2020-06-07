@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>ödev</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+<script src="jquery.blockUI.js"></script>
+<script>
+
+$(document).ready(function() { 
+        $.blockUI({ 
+            message: $('#ana'), 
+            css: { 
+                top:  ($(window).height() - 100) /2 + 'px', 
+                left: ($(window).width() - 500) /2 + 'px', 
+                width: '0px',
+                opacity: 1
+            },
+            overlayCSS : {
+                opacity: 1
+            }
+        }); 
+setTimeout($.unblockUI, 2000); 
+}); 
+        
+</script>
+
+<body>
+<div id="ana" style="display:none;">
+  <div id="icorta">  
+<img src="resim.jpg">  
+	    
+  </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+
+<body>
+<div id="kapsayici">
+  <div id="ust"><center><h3>ÇOMAKDAĞ KIZILAĞAÇ KÖYÜ</h3></center></div>
+ <div id="logo"></div>
+ <div id="menu">
+   <ul>
+     <li><a href="anasayfa.html">ANASAYFA </a></li>
+     <li><a href="ürünlerimiz.html">KÖYÜMÜZ</a>
+       <ul>
+         <li><a href="tarihi.HTML">Tarihi</a></li>
+            <li><a href="evleri.HTML">Evleri</a></li>
+         <li><a href="yemekleri.HTML">Yemekleri</a></li>
+         <li><a href="A">Kıyafetleri</a></li>
+         <li><a href="A">Gelenekleri</a></li>
+         <li><a href="A">Düğünleri</a></li>
+       </ul>
+     </li>
+     <li><a href="https://www.sondakika.com/milas/">HABERLER</a></li>
+     <li><a href="iletisim.html">Foto Galeri</a></li>
+     <li><a href="mesaj.html">MESAJ GÖNDER</a></li>
+      </ul>
+
+
+    </div>
+
+
+
+</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
